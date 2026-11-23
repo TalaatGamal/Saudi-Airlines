@@ -9,8 +9,8 @@
     background-color: rgba(65, 65, 65, 0.529);
     backdrop-filter: blur(10px);
     display: flex; 
-    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    display: none; */
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    /* display: none; */
     align-items: center;
     justify-content: start;
     flex-direction: column;

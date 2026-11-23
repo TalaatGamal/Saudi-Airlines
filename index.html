@@ -6,6 +6,7 @@
     <title>Saudia Airlines</title>
     <link rel="icon" href="https://www.saudia.com/dist/SaudiaWebApp/prod/browser/favicon-rebrand.png">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="CSS/intro.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,6 +75,9 @@
 
        </div>
     </header>
+    <div class="feed">
+        Send feedback
+    </div>
     <div class="main">
         <section class="home">
             <div class="offers">
@@ -132,71 +136,84 @@
             </div>
             <div class="book-container">
                 <div class="bc">
-                    <div class="nav">
-                        <ul>
-                            <li>Book</li>
-                            <li>Manage</li>
-                            <li>Check-in</li>
-                            <li>Flight status</li>
-                            <li>Flight schedule</li>
-                        </ul>
-                        <ul class="links">
-                            <li>Flight + Hotel<i class="fa-solid fa-arrow-right-long"></i></li>
-                            <li>Umrah<i class="fa-solid fa-arrow-right-long"></i></li>
-                            <li>Hotels<i class="fa-solid fa-arrow-right-long"></i></li>
-                            <li>Cars<i class="fa-solid fa-arrow-right-long"></i></li>
-                        </ul>
-                    </div>
-                    <div class="options">
-                        <div class="radios">
-                            <div class="radio">
-                                <input type="radio" name="" id="">
-                                Round trip
-                            </div>
-                            <div class="radio">
-                                <input type="radio" name="" id="">
-                                One way
-                            </div>
-                            <div class="radio">
-                                <input type="radio" name="" id="">
-                                Multi-city
-                            </div>
+                    <div class="controls">
+                        <div class="hrs">
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
                         </div>
-                       <label class="btn">
-                        
-                            <input type="checkbox" id="miles">
-                            <span class="switch"></span>
-                            Book with Miles
+                        <div class="circle"><i class="fa-solid fa-arrow-left"></i></div>
+                        <div class="circle"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="circle"><i class="fa-solid fa-pause"></i></div>
+                    </div>
+                    <div class="bc-in">
+                        <div class="nav">
+                            <ul>
+                                <li>Book</li>
+                                <li>Manage</li>
+                                <li>Check-in</li>
+                                <li>Flight status</li>
+                                <li>Flight schedule</li>
+                            </ul>
+                            <ul class="links">
+                                <li>Flight + Hotel<i class="fa-solid fa-arrow-right-long"></i></li>
+                                <li>Umrah<i class="fa-solid fa-arrow-right-long"></i></li>
+                                <li>Hotels<i class="fa-solid fa-arrow-right-long"></i></li>
+                                <li>Cars<i class="fa-solid fa-arrow-right-long"></i></li>
+                            </ul>
+                        </div>
+                        <div class="options">
+                            <div class="radios">
+                                <div class="radio">
+                                    <input type="radio" name="" id="">
+                                    Round trip
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="" id="">
+                                    One way
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="" id="">
+                                    Multi-city
+                                </div>
+                            </div>
+                        <label class="btn">
+                            
+                                <input type="checkbox" id="miles">
+                                <span class="switch"></span>
+                                Book with Miles
 
-                    </label>
-              
-                    </div>
-                    <div class="journey">
-                        <div class="go">
-                            <label>From</label>
-                            <div class="input">
-                                <input type="text" placeholder="Cairo (CAI)">
-                                <i class="fa-solid fa-plane-departure"></i>
+                        </label>
+                
+                        </div>
+                        <div class="journey">
+                            <div class="go">
+                                <label>From</label>
+                                <div class="input">
+                                    <input type="text" placeholder="Cairo (CAI)">
+                                    <i class="fa-solid fa-plane-departure"></i>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-right-left middle"></i>
+                            <div class="go">
+                                <label>To</label>
+                                <div class="input">
+                                    <input type="text" placeholder="To">
+                                    <i class="fa-solid fa-plane-arrival"></i>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <i class="fa-solid fa-chevron-down"></i>
                             </div>
                         </div>
-                        <i class="fa-solid fa-right-left middle"></i>
-                        <div class="go">
-                            <label>To</label>
-                            <div class="input">
-                                <input type="text" placeholder="To">
-                                <i class="fa-solid fa-plane-arrival"></i>
+                        <div class="blue-line">
+                            <i class="fa-solid fa-info"></i>
+                            Read more about the latest travel requirements for your next destination
+                            <div class="btn">
+                                Learn more
+                                <i class="fa-solid fa-chevron-right"></i>
                             </div>
-                        </div>
-                        <div class="down">
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                    </div>
-                    <div class="blue-line">
-                        <i class="fa-solid fa-info"></i>
-                        Read more about the latest travel requirements for your next destination
-                        <div class="btn">
-                            Learn more
-                            <i class="fa-solid fa-chevron-right"></i>
                         </div>
                     </div>
                 </div>
@@ -204,6 +221,6 @@
         </section>
     </div>
     <script src="JS/script.js"></script>
-    <script src="JS/home-offers.js"></script>
+    <script src="JS/home.js"></script>
 </body>
 </html>
