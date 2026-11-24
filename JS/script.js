@@ -90,9 +90,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 const header = document.getElementById("header");
-const container = document.getElementById("whaite");
+const white = document.getElementById("white");
 const sections = document.getElementById("main");
+const body = document.getElementById("body");
+const white_logo = document.getElementById("white-logo");
+const green_logo = document.getElementById("green-logo");
 
 let isScrolled = false;
 let isPlanVisible = false;
@@ -101,11 +115,19 @@ function updateHeader() {
 
     if (isPlanVisible) {
         header.style.background = "#ffffff";
+        header.style.borderBottom="solid 1px #0000004a"
+        green_logo.style.display = "flex";
+        white_logo.style.display = "none";
 
     } else if (isScrolled) {
         header.style.background = "#1a1a1a";
+        white_logo.style.display = "flex";
+        green_logo.style.display = "none";
 
     } else {
+        white_logo.style.display = "flex";
+        green_logo.style.display = "none";
+
         header.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 2.5%, rgba(0, 0, 0, 0.8) 2%, rgba(255, 0, 0, 0) 95.5%)";
     }
 }
@@ -131,23 +153,32 @@ const observer = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
 
-        isPlanVisible = entry.isIntersecting && entry.intersectionRatio >= 0.5;
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
 
-        if (isPlanVisible) {
-            sections.style.background = "#ffffff";
-            console.log("whaite section is whaite")
+            isPlanVisible = true;
+
         } else {
-            sections.style.background = "var(--main-dark-color)";
+
+            // نتأكد إن العنصر الآخر مش ظاهر قبل إلغاء الحالة
+            isPlanVisible = false;
+
         }
+
+        sections.style.background = isPlanVisible
+            ? "#ffffff"
+            : "var(--main-dark-color)";
+
+        body.style.color = isPlanVisible
+            ? "var(--color4)"
+            : "var(--color3)";
 
         updateHeader();
 
     });
 
 }, {
-    threshold: 0.5
+    threshold: 0.2
 });
 
-if (container) {
-    observer.observe(container);
-}
+// Observe
+if (white) observer.observe(white);
