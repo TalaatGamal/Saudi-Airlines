@@ -9,11 +9,18 @@
     font-style: normal;
     font-variation-settings:"GRAD" 0;
 }
+:root{
+    --main-dark-color: #192518;
+    --main-white-color: #ffffff;
+    --color1:#00803e;
+    --color2:#09ad5c;
+}
 body{
     background-color: rgb(0, 0, 0);
     color: #ffffff;
     overflow-x: hidden;
     width: 100vw;
+    min-height: max-content;
 }
 header{
     position: fixed;
@@ -23,6 +30,7 @@ header{
     height: 71px;
     z-index: 10;
     background: linear-gradient(to bottom , rgba(0, 0, 0, 0.8) 2.5%, rgba(0, 0, 0, 0.8) 2%, rgba(255, 0, 0, 0)95.5%);
+    transition: 0.5s;
 }
 header .container{
     width: 79vw;
@@ -73,7 +81,7 @@ header .right div{
 header .right .log{
     width: 72px;
     height: 40px;
-    background-color: #00803e;
+    background-color: var(--color1);
     margin-left: 7px;
     border: none;
     font-size: 18px;
@@ -102,27 +110,22 @@ header .right .search{
 section{
     width: 100vw;
     min-height: 100vh;
+    /* background-color: var(--main-dark-color); */
+    transition: 0.5s;
 }
-
-/* Space */
-/* Space */
-/* Space */
-/* Space */
-/* Space */
-/* Space */
-/* Space */
-/* Space */
-/* Space */
-/* Space */
+.main{
+    background-color: var(--main-dark-color);
+    transition: 0.5s;
+}
 .feed{
     width: 130px;
     height: 35px;
-    background-color: #00803e;
+    background-color: var(--color1);
     transform: rotate(90deg);
     position: fixed;
     top: 45vh;
     right: -49px;
-    z-index: 9;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,20 +134,316 @@ section{
 }
 
 
+/* Space */
+/* Space */
+/* Space */
+/* Space */
+/* Space */
+/* Space */
+/* Space */
+/* Space */
+/* Space */
+
+
+
+.plan{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8vh;
+    min-height: 90vh;
+}
+.plan .title{
+    width: 79vw;
+    height: 70px;
+    font-size: 38px;
+}
+.plan .items{
+    width: 79vw;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+.plan .items .item{
+    background-size: cover;
+    background-position: center;
+}
+.plan .item .filter{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #0000002a;
+}
+ .plan .filter .text{
+    width: 82%;
+    height: 25%;
+    min-height: 100px;
+    padding: 0px 25px 0px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .plan .filter .text h2{
+    font-size: 25px;
+    line-height: 35px;
+ }
+ .plan .filter .text p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffffd1;
+ }
+ .plan .filter .arrow{
+    width: 18%;
+    min-width: 80px;
+    height: 25%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .plan .arrow .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: var(--color1);
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan .items .it-1{
+    width: 50%;
+    min-width: 400px;
+    height: 450px;
+    background-position: 50% 10%;
+    background-image: url(https://diwanfm.net/stockage/SAUDIA4726.jpg);
+    /* background-image: url(https://scontent.fcai19-12.fna.fbcdn.net/v/t39.30808-6/717821727_1450596440438256_4204960803833744495_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=p526x296&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dCzGEiG0-tkQ7kNvwFCgC_W&_nc_oc=Adrzgt1N_rrRzYQ5apXvp6bvqyI655W520GMHzR1eInNBP33ALLfSPY0mdwF1dl4o84&_nc_zt=23&_nc_ht=scontent.fcai19-12.fna&_nc_gid=n2RSPj8Is1pzQkg0XnBeHQ&_nc_ss=7b3a8&oh=00_AQT5_lHu0z08NHpJRRkJLKVKoJz6Jxt9Zmzrdi4TbGP6cw&oe=6B0B5859); */
+}
+.plan .items .it-1 .text{
+    display: inline-block;
+}
+.plan .items .it-1 .text h2{
+    line-height: 45px;
+}
+.plan .items .it-2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSipLyt8zuLS_Ldw5LXKXhBqehMHtzHMpnTzRH8YI9yMi2BLAa_SYikgoc&s=10);
+    width: 25%;
+    min-width: 40px;
+    height: 450px;
+}
+.plan .last-it{
+    width: 25%;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.plan .items .it-3{
+    background-position: 50% 60%;
+    background-image: url(https://scontent.fcai19-12.fna.fbcdn.net/v/t39.99422-6/756833128_893658749997668_7518843080236120342_n.png?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=p526x296&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=f-Jl2PS8UIEQ7kNvwEIl2uu&_nc_oc=Adp3-uqS0Y4y_c6mTH6CNP5BzETKZPlr12DDA8aw_ZghXOOVrZAfJglUGUFqZ7jdH0U&_nc_zt=14&_nc_ht=scontent.fcai19-12.fna&_nc_gid=Uls9cXfGl2aJaQVAv05Ugw&_nc_ss=7b2a8&oh=00_AQTqgTyBDnMqY340EU2zkr88LHJfizB-xsPST7tcly7i2g&oe=6B0A5496);
+    width: 100%;
+    min-width: 250px;
+    height: 212.5px;
+}
+.plan .items .it-4{
+    background-image: url(https://traveltradejournal.com/wp-content/uploads/2025/11/Saudia-launches-Flight-Pass-for-fixed-fare-domestic-travel.jpg);
+    background-position: 50% 100%;
+    background-size: 160%;
+    width: 100%;
+    min-width: 250px;
+    height: 212.5px;
+}
+/* offer-container */
+/* offer-container */
+/* offer-container */
+/* offer-container */
+/* offer-container */
+/* offer-container */
+/* offer-container */
+/* offer-container */
+/* offer-container */
+/* offer-container */
+/* offer-container */
+/* offer-container */
+/* offer-container */
+/* offer-container */
+
+
+.offer-container{
+    width: 100vw;
+    min-height: 400px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer-container .offer{
+    width: 79vw;
+    height: 370px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 30px 0px 30px;
+}
+.offer-container .o-1{
+    background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/MobileApp/loyalty/EStore/Option-2/Homepage/green/AF---Green-Friday-ENWeb-1200x372.ashx?h=372&iar=0&w=1200&rev=337118b1d3b748e39147cf7707be32eb&hash=D5ED187517D153545E5210D51E06D6BF);
+}
+.offer-container .o-2{
+    background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Live-images/Campaign-Banner/2024/06/SVW-MID-newsletter-en.ashx?h=744&iar=0&w=2488&rev=73217c27117547a9a6bf2a4f6c4cf23a&hash=B4E3586917DD0F85F5493960043FABC9);
+}
+.offer-container .o-3{
+    background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Live-images/Campaign-Banner/2025/05/sta-calendar-en.ashx?h=372&iar=0&w=1200&rev=01cefa3ed2424beebbeb55f4550b662e&hash=3149C512C2EBA61FE7EF6A713229FD95);
+}
+.offer-container .offer h2{
+    font-size: 40px;
+    max-width: 500px;
+}
+.offer-container .offer p{
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 550px;
+}
+.offer-container .offer .btn{
+    min-width: 150px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #1a1a1a;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0px 20px 0px 20px;
+}
+.offer-container .offer .btn i{
+    font-size: 21px;
+}
+.offer-container .o-2 h2{
+    margin-bottom: 10px;
+}
+
+
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
+/* Exceptional */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.whaite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.exceptional{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.exceptional .excep{
+    width: 79vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.exceptional .title{
+    width: 50%;
+    min-width: 400px;
+    background-color: #66040400;
+    position: sticky;
+    top: 71px;
+}
+.exceptional .title h2{
+    font-size: 60px;
+    line-height: 65px;
+}
+.exceptional .title p{
+    font-size: 17px;
+    max-width: 500px;
+    margin-top: 20px;
+    color: #a4a4a4;
+}
+.exceptional .items{
+    width: 50%;
+    min-width: 400px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+.exceptional .items .item{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.exceptional .items .text{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+}
+.exceptional .items .text h2{
+    font-size: 24.5px;
+    max-width: 280px;
+}
+.exceptional .items .text p{
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 500px;
+    color: #a4a4a4;
+}
+.exceptional .items .text .btn{
+    min-width: 200px;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--color2);
+}
+.exceptional .items .img{
+    background-color: #ffffff;
+    background-position: center;
+    background-size: cover;
+    min-width: 280px;
+    height: 220px;
+}
+.exceptional .items .i-1{
+    background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Live-images/Home-Page-Rebranding/Time-flies.ashx?h=1200&iar=0&w=1270&rev=bfeabd9118e7491eaee57195800b5e0c&hash=2502CDE9D19B406D640FCE77B6E66CA7);
+}
+.exceptional .items .i-2{
+    background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Media-Center/2026/Saudia_3_670x423_SKYTRAX2026.ashx?h=423&iar=0&w=670&rev=aa273ea3a6474b80a10ffa1a4b8246b8&hash=2FD095B4297971125CF5CCB8B8CE493F);
+}
+.exceptional .items .i-3{
+    background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Live-images/Campaign-Banner/2025/02/Saudia_Travel-Companion_Web_1240x1171_EN.ashx?h=1171&iar=0&w=1240&rev=fb2ca24d991d452186a88297ae73d95f&hash=6BAAB0142E8ADFEB9936EC366C333261);
+}

@@ -55,7 +55,7 @@
 .home #o-1 .btn{
     width: 120px;
     height: 50px;
-    background-color: #00803e;
+    background-color: var(--color1);
     color: #ffffff;
     border: none;
     font-weight: 500;
@@ -126,7 +126,7 @@
 .home #o-2 .btn{
     width: 170px;
     height: 50px;
-    background-color: #00803e;
+    background-color: var(--color1);
     color: #ffffff;
     border: none;
     font-weight: 500;
@@ -203,7 +203,7 @@
 .home #o-3 .btn{
     width: 200px;
     height: 50px;
-    background-color: #00803e;
+    background-color: var(--color1);
     color: #ffffff;
     border: none;
     font-weight: 500;
@@ -303,7 +303,7 @@
 .home #o-4 .btn{
     width: 120px;
     height: 50px;
-    background-color: #00803e;
+    background-color: var(--color1);
     color: #ffffff;
     border: none;
     font-weight: 500;
@@ -362,8 +362,8 @@
     
     width: 100vw;
     height: 25vh;
-    background-color: #192518;
-    box-shadow: #192518 0px -40px 25px 20px;
+    background-color: var(--main-dark-color);
+    box-shadow: var(--main-dark-color) 0px -40px 25px 20px;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -441,11 +441,11 @@
     align-items: center;
 }
 .book-container .nav .links li{
-    color: #00602e;
+    color: var(--color1);
 }
 .book-container .nav .links i{
     transform: rotate(-50deg);
-    color: #00602e;
+    color: var(--color1);
     font-size: 12px;
     margin-left: 2px;
 }
@@ -476,7 +476,7 @@
     height: 20px;
 }
 .book-container .options .btn{
-    color: #00602e;
+    color: var(--color1);
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -512,7 +512,7 @@
 }
 
 .book-container .options .btn input:checked + .switch {
-    background: #008c45;
+    background: var(--color1);
 }
 
 .book-container .options .btn input:checked + .switch::before {
@@ -548,7 +548,7 @@
     width: 100%;
 }
 .book-container .go .input i{
-    color: #00803e;
+    color: var(--color1);
     font-size: 25px;
 }
 .book-container .go .input input{
@@ -576,7 +576,7 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    background-color: #00803e;
+    background-color: var(--color1);
 }
 .book-container .journey .down i{
     font-size: 20px;
