@@ -11,7 +11,6 @@
     width: 100vw;
     height: 75vh;
     overflow: hidden;
-    /* display: inline-flex; */
 }
 .home .offers .offer{
     width: 100vw;
@@ -35,7 +34,7 @@
 #o-1{
     background-image: url(https://images.newsfilecorp.com/files/9108/302849_apex_x%20en.jpg);
     background-position: 50% 100%;
-    background-size: 106%;
+    background-size: cover;
 }
 #o-1 .text{
     position: relative;
@@ -361,7 +360,7 @@
 .book-container{
     
     width: 100vw;
-    height: 25vh;
+    height: 35vh;
     background-color: var(--main-dark-color);
     box-shadow: var(--main-dark-color) 0px -40px 25px 20px;
     display: flex;
@@ -612,4 +611,57 @@
 }
 .book-container .blue-line .btn i{
     border: none;
+}
+
+
+
+
+
+
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+/* responsive design */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1290px) {
+    
+}
+
+@media (max-width:1080px) {
+    
+}
+@media (max-width:630px) {
+    #o-1{
+    background-position: 67% 100%;
+    background-size: cover;
+}
 }

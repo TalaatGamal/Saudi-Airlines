@@ -53,6 +53,9 @@
             <img src="https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Logo/header/saudia_logo_light_header.ashx?h=224&iar=0&w=787&rev=49594da6c3cb4ea8a11ad61c30e8d1dc&hash=DB10F664B474442E5B5D588290EB7BFD" alt="">
             <img style="height: 32px;" src="https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Logo/footer/Group-10407_Light.ashx?h=32&iar=0&w=33&rev=6d34d4c91ebf426f8df7c1e5fc97b5d8&hash=C7FA9B7C1B27443FC7436165CA7E251B" alt="">
         </a>
+        <a href="index.html" class="mobile-logo">
+            <img src="https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Search/DarkeSauidaLogo-Mobile.ashx?h=120&iar=0&w=132&rev=641fccd30ed142099bf61040e806e2f4&hash=2B9A5A87DA6778941E26E443D5EB40BA" alt="">
+        </a>
         <nav>
             <ul>
                 <li>Explore</li>
@@ -72,9 +75,11 @@
                 <div class="flag"></div>
                 EN
             </div>
-            <div class="log">
+            <div class="log" id="log">
                 Login
             </div>
+            <i class="fa-regular fa-user user-icon"></i>
+            <i class="fa-solid fa-bars   bars-icon"></i>
         </div>
 
        </div>
@@ -97,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="offer" id="o-2">
+                <div class="offer" id="o-2" style="display: none;">
                     <div class="filter">
                           <div class="text">
                             <h2>
@@ -110,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="offer" id="o-3">
+                <div class="offer" id="o-3" style="display: none;">
                     <div class="filter">
                         <div class="text">
                             <h2>
@@ -124,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="offer" id="o-4">
+                <div class="offer" id="o-4" style="display: none;">
                     <div class="filter">
                         <div class="text">
                             <h2>
@@ -402,9 +407,21 @@
             <div class="end" id="end">
                 <div class="content">
                     <div class="our">
-                        <div class="logo">
-                            <div class="img"></div>
-                            <div class="img2"></div>
+                        <div class="logo-container">
+                            <div class="logo">
+                                <div class="img"></div>
+                                <div class="img2"></div>
+                            </div>
+                        </div>
+                        <div class="app">
+                            
+                                Download the Saudia app
+                            
+                            <div class="images">
+                                <img src="https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Playstore/Apple.ashx?h=40&iar=0&w=120&rev=3c949ce761f34f4d8363d5ad40c69288&hash=AA5CA039D3648CADEDA5850310F4A256" alt="">
+                                <img src="https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Playstore/GooglePlay.ashx?h=40&iar=0&w=135&rev=0f98350e5e98450da3cfd37188a59e52&hash=8B207318B53C14AE7D8D81A9B36C316C" alt="">
+                                <img src="https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Playstore/AppGallery.ashx?h=40&iar=0&w=134&rev=9f85025efd004e61bd2d21278bd34aba&hash=3E4B3C10E58347F1B7151DF6EE2B7A0A" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="nav">
@@ -419,71 +436,119 @@
                         </ul>
                         <ul>
                             <div class="title">Plan your trip</div>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Branded Fares</li>
+                            <li>Visa & permits</li>
+                            <li>Baggage</li>
+                            <li>Special assistance</li>
                         </ul>
                        </div>
                        <div class="list list-2">
                             <ul>
                             <div class="title">Book</div>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Flights</li>
+                            <li>Holidays packagescall ↗</li>
+                            <li>Umrah Packages</li>
+                            <li>Hotels ↗</li>
+                            <li>Cars ↗</li>
                         </ul>
                         <ul>
                             <div class="title">Manage</div>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Change flights</li>
+                            <li>Upgrade Flights</li>
+                            <li>Refunds</li>
+                            <li>Check In</li>
+                            <li>Extra baggage</li>
+                            <li>Seats reservation</li>
+                            <li>Meal Selection</li>
                         </ul>
                         <ul>
                             <div class="title">Loyalty</div>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Join AlFursan</li>
+                            <li>About AlFursan</li>
+                            <li>Tiers & benefits</li>
+                            <li>Family program</li>
+                            <li>Cash + Miles</li>
+                            <li>AlFursan commercial partners</li>
+                            <li>SkyTeam partners</li>
                         </ul>
                        </div>
                        <div class="list list-3">
-                            <ul>
+                        <ul>
                             <div class="title">Saudia Experience</div>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Travel classes</li>
+                            <li>SaudiaBEYOND</li>
+                            <li>Entertainment ↗</li>
                         </ul>
+
                         <ul>
                             <div class="title">About Us</div>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>About Saudia</li>
+                            <li>Careers</li>
+                            <li>Sustainability</li>
+                            <li>Media center</li>
+                            <li>Saudia News</li>
+                            <li>SkyTeam</li>
                         </ul>
+
                         <ul>
                             <div class="title">Help</div>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>FAQs</li>
+                            <li>Customer Service Plan</li>
+                            <li>Tarmac Delay Contingency Plan</li>
+                            <li>Accessibility Plan and Feedback Process</li>
+                            <li>Accessibility Plan Progress Report</li>
+                            <li>Contact us</li>
+                            <li>Our Offices</li>
                         </ul>
                        </div>
                     </div>
                 </div>
             </div>
+            <div class="more">
+                <div class="more-in">
+                    <div class="rank">
+                        <div class="item">
+                            <div class="img i-1"></div>
+                            Best Airline Staff Service 
+                        </div>
+                        <div class="item">
+                            <div class="img i-2"></div>
+                            2026 APEX Award for Best Cabin Service in the Middle East
+                        </div>
+                        <div class="item">
+                            <div class="img i-3"></div>
+                            Saudia ranked second globally for on-time performance (OTP) in 2025 
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="icon"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+                        <div class="icon"><a href=""><i class="fa-brands fa-x-twitter"></i></a></div>
+                        <div class="icon"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="icon"><a href=""><i class="fa-brands fa-tiktok"></i></a></div>
+                        <div class="icon"><a href=""><i class="fa-brands fa-youtube"></i></a></div>
+                        <div class="icon"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <ul class="list">
+                        <li>Terms & conditions</li>
+                        <li>Cookies policy</li>
+                        <li>Privacy</li>
+                        <li>Accessibility</li>
+                        <li>Passenger rights</li>
+                        <li>Service agreement</li>
+                        <li>Sitemap</li>
+                    </ul>
+                    <h3>
+                        © 2026 Saudia Airlines · All Rights Reserved.
+                    </h3>
+                </div>
+            </footer>
         </section>
     </div>
-    <script src="JS/script.js"></script>
-    <script src="JS/home.js"></script>
+    <!-- <script src="JS/script.js"></script> -->
+    <!-- <script src="JS/home.js"></script> -->
 </body>
 </html>

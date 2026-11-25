@@ -102,6 +102,7 @@
 
 
 const header = document.getElementById("header");
+const log_btn = document.getElementById("log");
 const white = document.getElementById("white");
 const sections = document.getElementById("main");
 const body = document.getElementById("body");
@@ -115,19 +116,28 @@ function updateHeader() {
 
     if (isPlanVisible) {
         header.style.background = "#ffffff";
-        header.style.borderBottom="solid 1px #0000004a"
+        header.style.borderBottom ="solid 1px #0000004a";
+        header.style.color = "var(--colorp)";
+        log_btn.style.backgroundColor = "var(--color1-5)";
+        log_btn.style.color = "var(--color1)";
         green_logo.style.display = "flex";
         white_logo.style.display = "none";
 
     } else if (isScrolled) {
         header.style.background = "#1a1a1a";
+        header.style.color = "#ffffff";
+        log_btn.style.backgroundColor = "var(--color1)";
+        log_btn.style.color = "#ffffff";
         white_logo.style.display = "flex";
         green_logo.style.display = "none";
 
     } else {
         white_logo.style.display = "flex";
         green_logo.style.display = "none";
-
+        log_btn.style.backgroundColor = "var(--color1)";
+        log_btn.style.color = "#ffffff";
+        header.style.borderBottom ="none";
+        header.style.color = "#ffffff";
         header.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 2.5%, rgba(0, 0, 0, 0.8) 2%, rgba(255, 0, 0, 0) 95.5%)";
     }
 }
