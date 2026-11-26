@@ -526,6 +526,7 @@ section{
     border: #a4a4a4 solid 1px;
     border-left: none;
     border-right: none;
+    overflow: hidden;
 }
 .email-container .content{
     width: 79vw;
@@ -640,6 +641,7 @@ section{
     justify-content: start;
     gap: 30px;
     margin-top: 60px;
+    overflow: hidden;
 }
 .end .logo-container{
     height: 70vh;
@@ -685,6 +687,7 @@ section{
     text-align: start;
     font-size: 17px;
     color: var(--colorp);
+    overflow: hidden;
 }
 .end .app .images{
     display: flex;
@@ -752,6 +755,7 @@ section{
     border: #a4a4a4 solid 1px;
     border-left: none;
     border-right: none;
+    overflow: hidden;
 }
 .more .more-in{
     width: 79vw;
@@ -836,6 +840,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 footer .footer{
     width: 79vw;
@@ -1084,9 +1089,6 @@ footer .footer{
         display: flex;
         justify-content: start;
         padding: 20px 30px 20px 30px;
-    }
-    .offer-container{
-
     }
     .offer-container .offer h2{
         font-size: 33px;
