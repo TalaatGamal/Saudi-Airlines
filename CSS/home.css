@@ -32,8 +32,9 @@
     /* opacity: 10%; */
 }
 #o-1{
+    /* background-image: url(https://www.businesstraveller.com/wp-content/uploads/2025/10/3-copy-1024x761.jpg.webp); */
     background-image: url(https://images.newsfilecorp.com/files/9108/302849_apex_x%20en.jpg);
-    background-position: 50% 100%;
+    background-position: center;
     background-size: cover;
 }
 #o-1 .text{
@@ -407,11 +408,11 @@
     border-radius: 10px;
 }
 .book-container .controls .circle{
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     border-radius: 100px;
     background-color: #00000050;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -436,6 +437,7 @@
     /* color: #000000c4; */
     font-size: 16px;
     height: 50px;
+    min-width: max-content;
      display: flex;
     justify-content: center;
     align-items: center;
@@ -713,8 +715,13 @@
 }
 @media (max-width:636px) {
     #o-1{
-    background-position: 67% 100%;
-    background-size: cover;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWrl_eyPJS3te0Qa8mEvi_Tm_wzylTNnTkm4ues8V3c4tFzf5CrCYW9h1&s=10);
+        /* background-image: url(https://www.businesstraveller.com/wp-content/uploads/2025/10/3-copy-1024x761.jpg.webp); */
+        background-position: 25% 50%;
+        /* background-position: 40% 50%; */
+    }
+    #o-1 .filter{
+        background-color: #00000055;
     }
     .book-container .bc-in .links2{
         display: none;
@@ -749,5 +756,8 @@
     .book-container .go .input input{
         font-size: 15px;
         height: 25px;
+    }
+    .book-container .blue-line .btn span{
+        display: none;
     }
 }
