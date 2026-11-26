@@ -302,7 +302,7 @@ section{
 }
 .plan .items .it-3{
     background-position: 50% 60%;
-    background-image: url(https://scontent.fcai19-12.fna.fbcdn.net/v/t39.99422-6/756833128_893658749997668_7518843080236120342_n.png?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=p526x296&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=f-Jl2PS8UIEQ7kNvwEIl2uu&_nc_oc=Adp3-uqS0Y4y_c6mTH6CNP5BzETKZPlr12DDA8aw_ZghXOOVrZAfJglUGUFqZ7jdH0U&_nc_zt=14&_nc_ht=scontent.fcai19-12.fna&_nc_gid=Uls9cXfGl2aJaQVAv05Ugw&_nc_ss=7b2a8&oh=00_AQTqgTyBDnMqY340EU2zkr88LHJfizB-xsPST7tcly7i2g&oe=6B0A5496);
+    background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Live-images/Home-Page-Rebranding/insurance-mweb.ashx?h=1200&iar=0&w=1270&rev=8e92f57f09b7470a9d05a22213c4de21&hash=0E44D2DE9EDF0F29CDAD3372BBA02AA0);
     width: 100%;
     min-width: 250px;
     height: 212.5px;
@@ -1046,17 +1046,63 @@ footer .footer{
     }
     .plan .items .it-1{
         width: 100%;
+        height: 330px;
+    }
+    .plan .items .text{
+        min-height: 80px;
+    }
+    .plan .items .it-1 .text{
+        min-height: 130px;
+    }
+    .plan .items .text h2{
+        line-height: 20px;
+        font-size: 20px;
+    }
+    .plan .items .it-1 .text p{
+        line-height: 20px;
+        font-size: 15px;
     }
     .plan .items .it-2{
         width: 100%;
         height: 165px;
     }
     .plan .items .it-3{
+        background-position: 50% 75%;
+        background-size: cover;
         width: 100%;
         height: 165px;
     }
     .plan .items .it-4{
+        background-position: 50% 100%;
+        background-size: cover;
         width: 100%;
         height: 165px;
+    }
+    .offer-container .offer{
+        width: 95%;
+        height: 540px;
+        display: flex;
+        justify-content: start;
+        padding: 20px 30px 20px 30px;
+    }
+    .offer-container{
+
+    }
+    .offer-container .offer h2{
+        font-size: 33px;
+    }
+    .offer-container .offer .btn{
+        height: 45px;
+    }
+    .offer-container .o-1{
+        margin-top: 100px;
+        background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/MobileApp/loyalty/EStore/Option-2/Homepage/green/AF---Green-Friday-ENmobile---1020-x-864.ashx?h=864&iar=0&w=1020&rev=a9344e98cd0d463286c54eedc86a4d82&hash=7D84C84FC0BB44E2E2DB89991A8B340C);
+    }
+    .offer-container .o-2{
+        background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Live-images/Campaign-Banner/2024/06/SVW-MID-newsletter-mobile.ashx?h=1064&iar=0&w=1190&rev=e3260773a26f4d1b8929d2224a7d5d72&hash=B28B736E4778B76035E96E614D15BA56);
+    }
+    .offer-container .o-3{
+        margin-top: 100px;
+        background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Live-images/Campaign-Banner/2025/05/sta-calendar-en-mobile.ashx?h=1064&iar=0&w=670&rev=6abd8f50cd934bafa2bd1fbbc5cc4fa2&hash=C3382E9B0BEA45316ADE2F5FAC38A11E);
     }
 }

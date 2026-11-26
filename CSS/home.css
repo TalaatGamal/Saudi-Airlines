@@ -364,7 +364,8 @@
 .book-container{
     
     width: 100vw;
-    height: 35vh;
+    min-height: 35vh;
+    max-height: 40vh;
     background-color: var(--main-dark-color);
     box-shadow: var(--main-dark-color) 0px -40px 25px 20px;
     display: flex;
@@ -719,13 +720,15 @@
 @media (max-width:636px) {
     #o-1{
         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWrl_eyPJS3te0Qa8mEvi_Tm_wzylTNnTkm4ues8V3c4tFzf5CrCYW9h1&s=10);
-        /* background-image: url(https://www.businesstraveller.com/wp-content/uploads/2025/10/3-copy-1024x761.jpg.webp); */
         background-position: 25% 50%;
-        /* background-position: 40% 50%; */
     }
     #o-1 .filter{
-        background-color: #00000055;
+        background-color: #00000034;
     }
+    /* #o-1{
+        background-image: url(https://scontent.fcai19-12.fna.fbcdn.net/v/t39.30808-6/484638016_1076551217838698_7937237834591853019_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x1280&ctp=s1280x1280&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mUjqol42ckMQ7kNvwEplnev&_nc_oc=Adr3W4f0TgH-97XdFZcfZ9pvjaFFHkOC_HBZUq2OrRJQWas3VVZwZln7yJcH2WRMP7U&_nc_zt=23&_nc_ht=scontent.fcai19-12.fna&_nc_gid=UnWRya6pTyhi8nPsd3ckfA&_nc_ss=7b3a8&oh=00_AQQCSBP5G-9O4OJ-Z08F67Md7sHdKY3HYYPwEGOsVSK91g&oe=6B0E6C85);
+        background-position: 100% 100%;
+    } */
     .book-container .bc-in .links2{
         display: none;
     }
