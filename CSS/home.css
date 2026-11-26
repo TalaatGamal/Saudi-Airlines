@@ -32,10 +32,13 @@
     /* opacity: 10%; */
 }
 #o-1{
-    /* background-image: url(https://www.businesstraveller.com/wp-content/uploads/2025/10/3-copy-1024x761.jpg.webp); */
-    background-image: url(https://images.newsfilecorp.com/files/9108/302849_apex_x%20en.jpg);
+    background-image: url(https://www.businesstraveller.com/wp-content/uploads/2025/10/3-copy-1024x761.jpg.webp);
+    /* background-image: url(https://images.newsfilecorp.com/files/9108/302849_apex_x%20en.jpg); */
     background-position: center;
     background-size: cover;
+}
+#o-1 .filter{
+    background-color: #00000052;
 }
 #o-1 .text{
     position: relative;
