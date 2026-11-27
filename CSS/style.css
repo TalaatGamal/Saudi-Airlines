@@ -644,6 +644,15 @@ section{
     margin-top: 60px;
     overflow: hidden;
 }
+.end .content .mob-nav{
+    width: 50%;
+    display: none;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 60px;
+    overflow: hidden;
+}
 .end .logo-container{
     height: 70vh;
 }
@@ -663,7 +672,9 @@ section{
     background-size: 95%;
     background-repeat: no-repeat;
     
-    width: 270px;
+    max-width: 270px;
+    min-width: 200px;
+    width: 100%;
     height: 100px;
 }
 .end .content .our .logo .img2{
@@ -679,7 +690,6 @@ section{
     height: 10vh;
     min-height: 100px;
     width: 100%;
-    max-width: 420px;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -692,8 +702,10 @@ section{
 }
 .end .app .images{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
@@ -722,6 +734,46 @@ section{
     color: var(--color4);
 }
 .end .content .nav ul li{
+    font-size: 13px;
+    color: var(--colorp);
+}
+.end .content .mob-nav ul{
+    list-style: none;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+    height: 0px;
+    min-height: 0px;
+    overflow: hidden;
+}
+.end .content .mob-nav .list{
+    width: 200px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+}
+.end .content .mob-nav .list-1{
+    gap: 60px;
+}
+.end .content .mob-nav .title{
+    font-size: 15px;
+    color: var(--color4);
+    border-bottom: #535353 solid 2px;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.end .content .mob-nav .title i{
+    color: var(--colorp);
+}
+.end .content .mob-nav ul li{
     font-size: 13px;
     color: var(--colorp);
 }
@@ -947,6 +999,9 @@ footer .footer{
     .exceptional .excep{
         width: 95%;
     }
+    .email-container .content{
+        width: 95%;
+    }
 }
 
 
@@ -1006,6 +1061,33 @@ footer .footer{
     .exceptional .title h2{
         font-size: 40px;
         line-height: 45px;
+    }
+    .email-container .content{
+        flex-wrap: wrap;
+        padding: 20px 0px 20px 0px;
+    }
+    .email-container .content .text{
+        width: 100%;
+        height: 100px;
+    }
+    .email-container .content .email{
+        width: 100%;
+        height: 100px;
+    }
+    .email-container .content .text p{
+        max-width: max-content;
+    }
+    .end .content{
+        width: 95%;
+    }
+    .end .content .nav{
+        display: none;
+    }
+    .end .content .mob-nav{
+        display: flex;
+    }
+    .end .our .app{
+        height: max-content;
     }
 }
 
@@ -1139,5 +1221,34 @@ footer .footer{
     }
     .exceptional .items{
         width: 100%;
+    }
+    .end .content{
+        justify-content: start;
+        flex-direction:column-reverse;
+        margin-bottom: 30px;
+    }
+    .end .content .mob-nav{
+        width: 100%;
+    }
+    .end .content .our{
+        min-height: max-content;
+        width: 100%;
+    }
+    .end .our .app{
+        align-items: center;
+    }
+    .end .our .app .images{
+        justify-content: center;
+    }
+    .end .logo-container{
+        height: max-content;
+        width: 100%;
+    }
+    .end .content .our .logo{
+        position: static;
+        justify-content: center;
+    }
+    .end .content .our .logo .img{
+        max-width: 200px;
     }
 }
