@@ -8,7 +8,7 @@
     font-size: 15px;
     font-style: normal;
     font-variation-settings:"GRAD" 0;
-    /* overflow-x: hidden; */
+    scrollbar-width: none;
 }
 :root{
     --main-dark-color: #192518;
@@ -430,11 +430,12 @@ section{
     display: flex;
     align-items: start;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 .exceptional .title{
     width: 50%;
-    min-width: 400px;
+    min-width: 200px;
+    overflow: hidden;
     background-color: #66040400;
     position: sticky;
     top: 71px;
@@ -451,7 +452,7 @@ section{
 }
 .exceptional .items{
     width: 50%;
-    min-width: 400px;
+    /* min-width: 400px; */
     display: flex;
     justify-content: start;
     align-items: start;
@@ -460,7 +461,7 @@ section{
 }
 .exceptional .items .item{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
     gap: 20px;
 }
@@ -939,6 +940,13 @@ footer .footer{
         width: 95vw;
         padding: 0px;
     }
+    .offer-container .offer{
+        width: 95%;
+        padding: 20px 30px 20px 30px;
+    }
+    .exceptional .excep{
+        width: 95%;
+    }
 }
 
 
@@ -986,6 +994,18 @@ footer .footer{
         width: 100%;
         min-width: 250px;
         height: 212.5px;
+    }
+    .exceptional .items .img{
+        min-width: 100%;
+        height: 220px;
+    }
+    .exceptional .items .item{
+        width: 100%;
+        flex-direction: column;
+    }
+    .exceptional .title h2{
+        font-size: 40px;
+        line-height: 45px;
     }
 }
 
@@ -1084,11 +1104,8 @@ footer .footer{
         height: 165px;
     }
     .offer-container .offer{
-        width: 95%;
         height: 540px;
-        display: flex;
         justify-content: start;
-        padding: 20px 30px 20px 30px;
     }
     .offer-container .offer h2{
         font-size: 33px;
@@ -1106,5 +1123,21 @@ footer .footer{
     .offer-container .o-3{
         margin-top: 100px;
         background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Live-images/Campaign-Banner/2025/05/sta-calendar-en-mobile.ashx?h=1064&iar=0&w=670&rev=6abd8f50cd934bafa2bd1fbbc5cc4fa2&hash=C3382E9B0BEA45316ADE2F5FAC38A11E);
+    }
+    .exceptional .excep{
+        flex-wrap: wrap;
+    }
+    .exceptional .title{
+        width: 95%;
+        text-align: center;
+        position: static;
+        margin-bottom: 50px;
+    }
+    .exceptional .title p{
+        font-size: 16px;
+        max-width: 100%;
+    }
+    .exceptional .items{
+        width: 100%;
     }
 }
