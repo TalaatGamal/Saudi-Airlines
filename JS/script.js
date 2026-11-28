@@ -94,51 +94,85 @@
 
 
 
-
-
-
-
-
-
-
 const header = document.getElementById("header");
 const log_btn = document.getElementById("log");
 const white = document.getElementById("white");
 const sections = document.getElementById("main");
 const body = document.getElementById("body");
+
 const white_logo = document.getElementById("white-logo");
 const green_logo = document.getElementById("green-logo");
+
+const mob_white_logo = document.getElementById("mob-white-logo");
+const mob_green_logo = document.getElementById("mob-green-logo");
 
 let isScrolled = false;
 let isPlanVisible = false;
 
 function updateHeader() {
 
+    const isDesktop = window.innerWidth > 636;
+
     if (isPlanVisible) {
+
         header.style.background = "#ffffff";
-        header.style.borderBottom ="solid 1px #0000004a";
+        header.style.borderBottom = "solid 1px #0000004a";
         header.style.color = "var(--colorp)";
         log_btn.style.backgroundColor = "var(--color1-5)";
         log_btn.style.color = "var(--color1)";
-        green_logo.style.display = "flex";
-        white_logo.style.display = "none";
+
+        if (isDesktop) {
+            green_logo.style.display = "flex";
+            white_logo.style.display = "none";
+            mob_green_logo.style.display = "none";
+            mob_white_logo.style.display = "none";
+        } else {
+            green_logo.style.display = "none";
+            white_logo.style.display = "none";
+            mob_green_logo.style.display = "flex";
+            mob_white_logo.style.display = "none";
+        }
 
     } else if (isScrolled) {
+
         header.style.background = "#1a1a1a";
         header.style.color = "#ffffff";
         log_btn.style.backgroundColor = "var(--color1)";
         log_btn.style.color = "#ffffff";
-        white_logo.style.display = "flex";
-        green_logo.style.display = "none";
+
+        if (isDesktop) {
+            white_logo.style.display = "flex";
+            green_logo.style.display = "none";
+            mob_green_logo.style.display = "none";
+            mob_white_logo.style.display = "none";
+        } else {
+            green_logo.style.display = "none";
+            white_logo.style.display = "none";
+            mob_white_logo.style.display = "flex";
+            mob_green_logo.style.display = "none";
+        }
 
     } else {
-        white_logo.style.display = "flex";
-        green_logo.style.display = "none";
+
+        if (isDesktop) {
+            white_logo.style.display = "flex";
+            green_logo.style.display = "none";
+            mob_green_logo.style.display = "none";
+            mob_white_logo.style.display = "none";
+        } else {
+            green_logo.style.display = "none";
+            white_logo.style.display = "none";
+            mob_green_logo.style.display = "none";
+            mob_white_logo.style.display = "flex";
+        }
+
         log_btn.style.backgroundColor = "var(--color1)";
         log_btn.style.color = "#ffffff";
-        header.style.borderBottom ="none";
+        header.style.borderBottom = "none";
         header.style.color = "#ffffff";
-        header.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 2.5%, rgba(0, 0, 0, 0.8) 2%, rgba(255, 0, 0, 0) 95.5%)";
+
+        header.style.background =
+            "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 2.5%, rgba(0, 0, 0, 0.8) 2%, rgba(255, 0, 0, 0) 95.5%)";
     }
 }
 
@@ -158,20 +192,18 @@ window.addEventListener("scroll", () => {
 
 });
 
+// Resize
+window.addEventListener("resize", updateHeader);
+
 // Intersection Observer
 const observer = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
 
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
-
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.1) {
             isPlanVisible = true;
-
         } else {
-
-            // نتأكد إن العنصر الآخر مش ظاهر قبل إلغاء الحالة
             isPlanVisible = false;
-
         }
 
         sections.style.background = isPlanVisible
@@ -187,8 +219,11 @@ const observer = new IntersectionObserver((entries) => {
     });
 
 }, {
-    threshold: 0.2
+    threshold: 0.1
 });
 
 // Observe
 if (white) observer.observe(white);
+
+// Initial update
+updateHeader();

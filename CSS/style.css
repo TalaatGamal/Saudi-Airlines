@@ -147,10 +147,13 @@ section{
     width: 100vw;
     min-height: 100vh;
     transition: 0.5s;
+    overflow: hidden;
 }
 .main{
     background-color: var(--main-dark-color);
     transition: 0.5s;
+    width: 100vw;
+    overflow: hidden;
 }
 .feed{
     width: 130px;
@@ -180,6 +183,134 @@ section{
 /* Space */
 /* Space */
 
+
+
+.best-fares{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.best-fares .fares{
+    width: 79vw;
+    min-height: 80vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    overflow: hidden;
+}
+.best-fares .title{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+.best-fares .title h2{
+    font-size: 40px;
+}
+.best-fares .title .line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    color: rgb(165, 165, 165);
+}
+.best-fares .title .btn{
+    color: var(--color2);
+}
+.best-fares .items{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    width: 79vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.best-fares .items .item{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 288px;
+}
+.best-fares .items .item .img{
+    background-size: cover;
+    background-position: center;
+    background-color: #5f5f5f;
+    min-width: 100%;
+    min-height: 370px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.best-fares .items .item .i-1{
+    background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Live-images/Destinations/SV_Fares-Section-Red-Sea-Images_1400x788-PX.ashx?rev=0d9b27403f1f467395fbc5604957378c);
+}
+.best-fares .items .item .i-2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGHpPi0Xg0k6JGA_-qow7IclNJI3LfZWCSuwi_h9W2sE97n_znX2hCD6E&s=10);
+}
+.best-fares .items .item .i-3{
+    background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Live-images/Destinations/Batch-2/jeddah-1.ashx?rev=5b89f8d1d46e4feeafdd2ae82d757c50);
+}
+.best-fares .items .item .i-4{
+    background-image: url(https://iamkatyjohnson.com/wp-content/uploads/2023/10/IMG_0431-scaled.jpg);
+}
+.best-fares .items .item .i-5{
+    background-image: url(https://www.saudia.com/-/media/SaudiaWebApp/data/media/img/Live-images/Destinations/Batch-2/Large/Abha/L-aabha-2.ashx?rev=6bf8b1ee90ee460fa7591a205ac3be14);
+}
+.best-fares .items .item h3{
+    font-size: 27px;
+}
+.best-fares .items .item .price{
+    color: var(--color2);
+}
+.best-fares .items .item p{
+    color: rgb(165, 165, 165);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* plan */
+/* plan */
+/* plan */
+/* plan */
+/* plan */
+/* plan */
+/* plan */
+/* plan */
+/* plan */
+/* plan */
+/* plan */
+/* plan */
+/* plan */
+/* plan */
+/* plan */
 
 
 .plan{
@@ -996,6 +1127,9 @@ footer{
     header .container{
     width: 95%;
     }
+    .best-fares .fares{
+        width: 95%;
+    }
     .plan .title{
         width: 95vw;
     }
@@ -1034,6 +1168,9 @@ footer{
 @media (max-width:1080px) {
     header nav{
         display: none;
+    }
+    .best-fares .items{
+        width: 95vw;
     }
     .plan .items{
         flex-wrap: wrap;
@@ -1180,6 +1317,17 @@ footer{
 @media (max-width:630px) {
     .feed{
         display: none;
+    }
+    .best-fares{
+        min-height: 70vh;
+        overflow: hidden;
+    }
+    .best-fares .fares{
+        margin-top: 0px;
+        min-height: 60vh;
+    }
+    .best-fares .title h2{
+        font-size: 33px;
     }
     header .container {
         gap: 10px;
